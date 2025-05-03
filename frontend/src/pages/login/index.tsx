@@ -10,16 +10,18 @@ function Login() {
     await login(username, password);
   };
   return (
-    <div className="flex flex-col item-center justify-center min-w-96 mx-auto">
+    <div className="flex flex-col item-center justify-center min-w-96 mx-auto ">
       <div className=" w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
-        <h1 className="text-3xl font-semibold text-center text-gray-300">
+        <h1 className="text-3xl font-semibold text-center text-white/80">
           Login
           <span className="text-blue-500"> ChatApp</span>
         </h1>
         <form onSubmit={handleSubmit}>
           <div>
             <label className="label p-2">
-              <span className="text-base label-text">Username</span>
+              <span className="text-base label-text text-white/80">
+                Username
+              </span>
             </label>
             <input
               type="text"
@@ -31,7 +33,9 @@ function Login() {
           </div>
           <div>
             <label className="label">
-              <span className="text-base label-text">Password</span>
+              <span className="text-base label-text text-white/80">
+                Password
+              </span>
             </label>
             <input
               type="password"
@@ -43,7 +47,7 @@ function Login() {
           </div>
           <Link
             to="/signup"
-            className="text-sm  hover:underline hover:text-blue-600 mt-2 inline-block"
+            className="text-sm text-blue-300 hover:underline hover:text-blue-600 mt-2 inline-block"
           >
             {"Don't"} have an account?
           </Link>

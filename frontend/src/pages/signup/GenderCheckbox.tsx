@@ -10,10 +10,10 @@ const GenderCheckbox: React.FC<GenderCheckboxProps> = ({
             selectedGender === "male" ? "selected" : ""
           }`}
         >
-          <span className="label-text">Male</span>
+          <span className="label-text text-blue-300">Male</span>
           <input
             type="checkbox"
-            className="checkbox border-slate-900"
+            className="checkbox border-blue-300"
             checked={selectedGender === "male"}
             onChange={() => onCheckboxChange("male")}
           />
@@ -25,10 +25,10 @@ const GenderCheckbox: React.FC<GenderCheckboxProps> = ({
             selectedGender === "female" ? "selected" : ""
           }`}
         >
-          <span className="label-text">Female</span>
+          <span className="label-text text-blue-300">Female</span>
           <input
             type="checkbox"
-            className="checkbox border-slate-900"
+            className="checkbox border-blue-300"
             checked={selectedGender === "female"}
             onChange={() => onCheckboxChange("female")}
           />

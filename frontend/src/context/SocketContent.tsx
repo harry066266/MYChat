@@ -42,7 +42,7 @@ export const SocketContextProvider = ({
   useEffect(() => {
     if (authUser) {
       // 初始化 socket 连接
-      const socketInstance = io("https://chat-app-ngnt.onrender.com", {
+      const socketInstance = io("http://localhost:5000", {
         query: {
           userId: authUser._id,
         },

@@ -31,6 +31,7 @@ const useSignup = () => {
           confirmPassword,
           gender,
         }),
+        credentials: "include", 
       });
       const data = await res.json();
       if (data.error) {
